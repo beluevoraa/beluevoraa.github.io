@@ -1,0 +1,263 @@
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: outfit;
+    line-height: 28px;
+    background-color: antiquewhite;
+    color: rgb(243, 163, 176);
+    scroll-behavior: smooth;
+}
+h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    padding: 00px;
+    background-color: rgb(243, 163, 176);
+    color: antiquewhite;
+    text-align: center;
+
+}
+.header-container {
+    background-color: #f7f7f7;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container h1 {
+    margin: 0;
+    font-size: 30px;
+    text-transform: uppercase;
+    
+}
+
+.header-container h1 a {
+    color: rgb(243, 163, 176);;
+    text-decoration: none;
+}
+
+.header-container nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-container nav ul li {
+    display: flex;
+    gap: 15px;
+}
+
+.header-container nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.header-container nav ul li a:hover {
+    text-decoration: underline;
+    background-color: pink;
+    color: white;
+}
+
+.about-content {
+    padding: 20px;
+    overflow: hidden;
+}
+
+.about-content img {
+    float: left;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 100px 100px 0 0 ;
+    margin-right: 20px;
+
+}
+
+.text {
+    overflow: hidden;
+}
+
+.text-enlace {
+    color: brown;
+    text-decoration: none;
+}
+
+#works {
+    padding: 20px 0px;
+}
+
+.work-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.work-item{
+   position: relative;
+   width: 400px;
+   height: 500px;
+   overflow: hidden;
+   border: 2px solid #ddd;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+
+.work-item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+#contact h4 {
+    color: #000;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.contacto {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.form input, .form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form button {
+    padding: 10px 20px;
+    background-color: pink;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 2rem;
+}
+
+.form button:hover {
+    background-color: rgb(203, 243, 203);
+}
+
+.redes-sociales {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.iconos {
+    display: flex;
+    justify-content: center;
+}
+
+.iconos a {
+    margin: 0 10px;
+}
+
+.footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.g-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 1000;
+ }
+ 
+ .slides {
+     display: none;
+     text-align: center;
+     position: relative;
+ }
+
+ .slides img {
+    max-width: 1300%;
+    width: 40%;
+    overflow: hidden;
+
+ }
+ 
+ .cursor {
+     cursor: pointer;
+ }
+ 
+ .prev, .next {
+     cursor: pointer;
+     position: absolute;
+     top: 40%;
+     width: auto;
+     padding: 16px;
+     margin-top: -50px;
+     font-weight: bold;
+     font-size: 40px;
+     text-align: center;
+     
+ }
+ 
+ .next {
+     right: 0;
+ }
+ 
+ .prev:hover, .next:hover {
+     background-color: rgba(0, 0, 0, 0.2);
+ }
+ 
+ .numberText {
+    display: none;
+ }
+
+ .caption-container {
+     text-align: center;
+     background-color: #222;
+     padding: 2px 16px;
+     color: white;
+     font-weight: bold;
+ }
+ 
+ .row:after {
+     content: "";
+     display: table;
+     clear: both;
+ }
+ 
+ .column {
+     float: left;
+     width: 16.66%;
+ }
+ 
+ .demo {
+     opacity: 0.6;
+ }
+ 
+ .active,
+ .demo:hover {
+     opacity: 1;
+ }
