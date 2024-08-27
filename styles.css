@@ -1,3 +1,20 @@
+:root {
+    --gray : #F0F0F0;
+    --coral: #f3a3b0;
+    --celeste: #AEDFF7;
+    --lavender: #E0BBE4;
+    --lilac: #e4d9ff;
+    --amarillo:  #FFF9C4;
+    --mint: #B2F2BB;
+    --rosa: #FFC1CC;
+    --blanco: #fff;
+    --negro: #000;
+    --cloud: #fffeed;
+    --peach: #ffbfb7;
+
+
+--fuente: 'outfit', sans-serif;    
+}
 
 html {
     box-sizing: border-box;
@@ -8,7 +25,7 @@ html {
   }
 body {
     margin: 0;
-    font-family: outfit;
+    font-family: outfit, sans-serif;
     line-height: 28px;
     background-color: antiquewhite;
     color: rgb(243, 163, 176);
@@ -23,8 +40,8 @@ h1 {
 }
 h2 {
     text-transform: uppercase;
-    font-size: 30px;
-    padding: 00px;
+    font-size: 28px;
+    padding: 0px;
     background-color: rgb(243, 163, 176);
     color: antiquewhite;
     text-align: center;
@@ -34,6 +51,7 @@ h2 {
 
 .header-container {
     background-color: #f7f7f7;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     margin-top: 0;
@@ -55,10 +73,20 @@ h2 {
     padding: 10px 20px;
 }
 
+.menu-toggle{
+    display: none;
+    font-size: 30px;
+    background:none;
+    border: none;
+    color: rgb(243, 163, 176);
+    cursor: pointer;
+}
+
 .nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: max-height 0.3s ease-out;
 }
 .nav a  {
     color: black;
@@ -74,6 +102,22 @@ h2 {
         padding: 10px;
     }
 
+}
+
+@media (max-width: 768px) {
+    .menu-toggle{
+        display: block;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .nav.active{
+        display: flex;
+        flex-direction: column;
+        max-height: 300px;
+    }
 }
 
 .nav a:hover{
@@ -212,7 +256,23 @@ h2 {
     height: auto;
     z-index: 1000;
  }
+
+ .close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: antiquewhite;
+    background-color: var(--peach);
+    border: none;
+    border-radius: 50%;
+   padding: 8px 8px;
+ }
  
+ .close:hover{
+    color: red;
+ }
  .slides {
      display: none;
      text-align: center;

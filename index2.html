@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <script src="gallery.js"></script>
     <script src="script.js"></script>
 </head>
 <body>
@@ -15,7 +16,9 @@
         <div class="header-container">
             <div class="inner-header">
             <h1> <a href="index.html">Mi portfolio</a></h1>
-            
+            <button class="menu-toggle" aria-label="toggle menu">
+                &#9776;
+            </button>
             <div class="nav-bg">
                 <nav class="nav container">
                     <a href="index.html">Inicio</a>
@@ -32,51 +35,75 @@
 
     <h2>I think i like this little life! </h2>
     <div class="g-container">
+      
+
         <div class="slides">
+            <span class="close" onclick="closeSlide(this)">&#10005;</span>
             <div class="numberText">1 / 12</div>
             <img src="img/benit.jpeg" alt="mi amor más grande, Benito">
         </div>
         <div class="slides">
+            <span class="close" onclick="closeSlide(this)">&#10005;</span>
             <div class="numberText">2 / 12</div>
             <img src="img/girls.jpeg" alt="mis besties ">
         </div>
         <div class="slides">
+            <span class="close" onclick="closeSlide(this)">&#10005;</span>
             <div class="numberText">3 / 12</div>
             <img src="img/gero.jpeg" alt="mi sobrino más grande, Gero">
         </div>
         <div class="slides">
+            <span class="close" onclick="closeSlide(this)">&#10005;</span>
+
             <div class="numberText">4 / 12</div>
             <img src="img/mami.jpeg"  alt="día de las madres con la mejor">
         </div>
         <div class="slides">
+            <span class="close" onclick="closeSlide(this)">&#10005;</span>
+
             <div class="numberText">5 / 12</div>
             <img src="img/abue.jpeg"  alt="mis hermanas y mi abuela">
+            
         </div>
         <div class="slides">
+            <span class="close" onclick="closeSlide(this)">&#10005;</span>
+
             <div class="numberText">6 / 12</div>
             <img src="img/flores.jpeg" alt="en Buenos Aires" >
         </div>
         <div class="slides">
+            <span class="close" onclick="closeSlide(this)">&#10005;</span>
+
             <div class="numberText">7 / 12</div>
             <img src="img/guys!.jpeg" alt="mi grupo de amigos" >
         </div>
         <div class="slides">
+            <span class="close" onclick="closeSlide(this)">&#10005;</span>
+
             <div class="numberText">8 / 12</div>
             <img src="img/sisters.jpeg" alt="mis hermanas">
         </div>
         <div class="slides">
+            <span class="close" onclick="closeSlide(this)">&#10005;</span>
+
             <div class="numberText">9 / 12</div>
             <img src="img/odin.jpeg" alt="mi perro Odín">
         </div>
         <div class="slides">
+            <span class="close" onclick="closeSlide(this)">&#10005;</span>
+
             <div class="numberText">10 / 12</div>
             <img src="img/bday.jpeg" alt="mis papiss">
         </div>
         <div class="slides">
+            <span class="close" onclick="closeSlide(this)">&#10005;</span>
+
             <div class="numberText">11 / 12</div>
             <img src="img/cae.jpeg" alt="Caetano">
         </div>
         <div class="slides">
+            <span class="close" onclick="closeSlide(this)">&#10005;</span>
+
             <div class="numberText">12 / 12</div>
             <img src="img/osi.jpeg" alt="Oso, el más lindo">
         </div>
@@ -86,9 +113,7 @@
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-        <div class="caption-container">
-            <p id="caption"></p>
-        </div>
+      
 
 
         <div class="row">
